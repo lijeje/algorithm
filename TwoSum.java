@@ -1,6 +1,5 @@
 package Main;
 
-import org.hibernate.mapping.Array;
 
 public class TwoSum {
 
