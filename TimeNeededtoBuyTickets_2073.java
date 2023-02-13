@@ -67,4 +67,17 @@ public class TimeNeededtoBuyTickets_2073 {
         return timeTaken;
     }
 
+//
+    public int timeRequiredToBuy2(int[] tickets, int k) {
+        int ans =0;
+        for(int i=0;i<tickets.length;i++){
+            if(i<=k){
+                ans+=Math.min(tickets[i],tickets[k]);
+            }else{
+                ans+=Math.min(tickets[k]-1,tickets[i]);
+            }
+        }
+        return ans;
+    }
+
 }
