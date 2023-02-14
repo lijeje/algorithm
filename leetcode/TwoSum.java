@@ -1,4 +1,4 @@
-package Main;
+package Main.leetcode;
 
 
 public class TwoSum {
