@@ -10,31 +10,24 @@ public class TimeNeededtoBuyTickets_2073 {
         int k = 0;
 
         TimeNeededtoBuyTickets_2073 timeNeededtoBuyTickets = new TimeNeededtoBuyTickets_2073();
-        int answer = timeNeededtoBuyTickets.buyTickets(tickets, k);
+        int answer = timeNeededtoBuyTickets.timeRequiredToBuy(tickets, k);
 
         System.out.println("answer : " + answer);
     }
 
-    public int buyTickets(int[] tickets, int k) {
-        int ticketCnt = 0;
-        int kcnt = tickets[k];
-
-        Queue<Integer> ticketQue = new LinkedList<>();
-
-        for(int i=0; kcnt==1; i++) {
-            int stdKey = tickets[i];
-            if(stdKey > 1) {
-                //뒤로 보내기
-                //전체카운트증가
-            } else {
-                //전체카운트 증가
+    public int timeRequiredToBuy(int[] tickets, int k) {
+        int totCnt = 0;
+        while(tickets[k]>0){
+            for(int i=0; i<tickets.length; i++) {
+                if(tickets[i]>0){
+                    totCnt++;
+                    tickets[i]--;
+                }
+                if(tickets[k]==0){
+                    break;
+                }
             }
         }
-        // 큐길이체크
-        System.out.println(ticketQue);
-
-
-
-        return ticketCnt;
+        return totCnt;
     }
 }
