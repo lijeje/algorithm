@@ -1,5 +1,7 @@
 package Main.leetcode;
 
+import java.util.Stack;
+
 public class RemoveOutermostParentheses {
     public static void main(String[] args) {
         RemoveOutermostParentheses removeOutermostParentheses = new RemoveOutermostParentheses();
@@ -15,7 +17,9 @@ public class RemoveOutermostParentheses {
 
     public String RemoveOutermostParentheses(String s){
         String str = "";
+        Stack stack = new Stack();
 
+        for(int i=0; i)
 
         return str;
     }
