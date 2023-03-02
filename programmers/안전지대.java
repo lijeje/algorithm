@@ -49,11 +49,8 @@ public class 안전지대 {
                 if(kf == 0){
                     answer += 1;
                 }
-                //System.out.print(board[k][f] + " ");
             }
-            //System.out.println();
         }
-
         return answer;
     }
 
@@ -64,4 +61,5 @@ public class 안전지대 {
             }
         }
     }
+
 }
