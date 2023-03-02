@@ -19,7 +19,7 @@ public class RemoveOutermostParentheses {
         String str = "";
         Stack stack = new Stack();
 
-        for(int i=0; i)
+        //for(int i=0; i)
 
         return str;
     }
