@@ -10,7 +10,7 @@ public class 표현가능한이진트리 {
 
     public int[] solution(long[] numbers) {
         int[] answer = new int[numbers.length];
-       // String[] binarynumbers = new String[numbers.length]; //이진수로 바꿔준 값을 넣기
+       // String[] binarynumKbers = new String[numbers.length]; //이진수로 바꿔준 값을 넣기
         StringBuilder sb = new StringBuilder();
 
         // 십진수를 이진수로 바꿔주기
